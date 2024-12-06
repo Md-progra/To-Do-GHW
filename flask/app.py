@@ -16,7 +16,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-# Initialize database on startup
+# Initialize database on startup of the application
 init_db()
 
 HTML_TEMPLATE = '''
