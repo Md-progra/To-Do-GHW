@@ -1,23 +1,36 @@
-# A Simple Flask App
+This is a sample of a basic Flask TODO app. The items are stored in memory and are lost when the server is restarted, but it should give you a basic idea of how to get started with Flask on Defang.
 
-This is a sample of a basic Flask TODO app. The items are stored in memory and are lost when the server is restarted, but it should give you a basic idea of how to get started with Flask on Defang. Note that alognside your .py file, include a requirements.txt so that the Dockerfile can install the necessary packages with pip.
+Project Structure
+app.py: Main application file containing the Flask routes and logic.
+requirements.txt: List of dependencies required to run the application.
+Getting Started
+Prerequisites
+Python 3.7+
+pip (Python package installer)
+Installation
+Clone the repository:
 
-### NOTE:
-This sample is a simple Flask app that demonstrates how to create a TODO app using Flask. The items are stored in memory and are lost when the server is restarted. This sample is intended to provide a basic understanding of how to get started with Flask on Defang. **it is not intended for production use**. If you need something production ready, you should use a managed database like Postgres or MySQL.
+git clone https://github.com/Md-progra/To-do-list.git
+cd To-do-list
+Install the required packages:
 
-## Essential Setup Files
-1. A [Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
-2. A [compose file](https://docs.defang.io/docs/concepts/compose) 
-3. A [.dockerignore]
+pip install -r requirements.txt
+Running the Application
+Start the Flask application:
 
+python app.py
+Open your browser and go to http://127.0.0.1:5000 to see the TODO list app in action.
 
+Usage
+Add a new task by typing in the input field and clicking "Add Task".
+Mark tasks as completed by checking the checkbox next to the task.
+Delete tasks by clicking the "Delete" button next to the task.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
 
----
+License
+This project is licensed under the MIT License.
 
-Title: Simple Flask App
-
-Short Description: A basic Flask todo app.
-
-Tags: flask, python, sqlite for database, Bootstrap for UI 
-
-Languages: python
+Acknowledgments
+Flask
+Bootstrap
